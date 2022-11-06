@@ -1,0 +1,237 @@
+/*  #131316 - black 
+    #E5E5E5 - white
+    #4AE290 - green
+    #f3f3f3 - gray
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Inter', sans-serif;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+}
+.main-container{
+    padding: 0 20px;
+}
+
+/* -------------------------- HEADER -------------------------------------- */
+.header {
+    position: relative;
+    padding: 252px 62px 248px 20px;
+    background-image: url('./img/Hero\ Img.png');
+    background-size: 74%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #131316;
+}
+.header__title {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+.header__title span{
+    color: #4AE290;
+}
+.header__descr {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #DEDEE3;
+    margin: 32px 0 32px 0;
+}
+.header__btn {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #131316;
+    padding: 12px 30px;
+}
+.nav {
+}
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #131316;
+    padding: 170px 0 129px 0;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform 300ms linear;
+}
+.active-menu{
+    transform: translateX(0%);
+    transition: transform 300ms linear;  
+}
+.mobile-logo__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    margin-bottom: 107px;
+    width: 100%;  
+}
+.mobile-logo {
+    display: inline-block;
+    width: 85px;
+    height: 23px;
+    background-image: url('./img/Logo.png');
+    background-size: contain;
+}
+.mobile-menu-btn {
+    display: inline-block;
+    width: 40px;
+    height: 21px;
+    background-image: url('./img/Menu\ Button.png');
+    background-size: contain;
+}
+.open-burger{
+    background-image: url('./img/Menu\ ButtonClose.png');
+}
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mobile-nav__item {
+    display: inline-block;
+    padding: 0 7px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #E5E5E5;
+    margin-bottom: 32px;
+}
+.mobile-nav__item:hover{
+    background-color: #E5E5E5;
+    color: #131316;
+}
+.enter-btn-container {
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+}
+.log-in, .sign-up {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 14px 40px;
+    color: #E5E5E5;
+}
+.log-in{
+    background-color: transparent;
+}
+.sign-up {
+    background-color: #4AE290;
+}
+/* -------------------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------ mission section --------------------------------- */
+.mission, .training, .price, .community {
+    padding: 80px 20px;
+   
+}
+.mission-container__title{
+    width: 251px;
+    height: 80px;
+    background-image: url('./img/titleBckg/Vector.png');
+    background-repeat: no-repeat;
+    background-size: 32%;
+    margin-bottom: 32px;
+}
+.section-title {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 300%;
+    color: #131316;
+    text-align: right;   
+}
+.section-title span{
+    color: #4AE290;
+}
+.mission__descr {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #595962;
+    margin-bottom: 32px;
+}
+.mission__btn {
+    width: 118px;
+    height: 52px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #131316;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mission__btn span{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url('./img/sliderR.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+/* ----------------------------------------------------------------------------------------------- */
+
+/* --------------------------- training section -------------------------------------------------- */
+.training-container__title{
+    width: 351px;
+    height: 80px;
+    background-image: url('./img/titleBckg/clarity_calendar-solid.png');
+    background-repeat: no-repeat;
+    background-size: 26%;
+    margin-bottom: 32px;
+}
+/* ----------------------------------------------------------------------------------------------- */
+
+/* ----------------------------- pricing --------------------------------------------------------- */
+.price-container__title{
+    width: 251px;
+    height: 80px;
+    background-image: url('./img/titleBckg/Vector\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: 26%;
+    margin-bottom: 50px;
+}
+/* ----------------------------------------------------------------------------------------------- */
+
+/* -------------------------------- community ---------------------------------------------------- */
+.community-container__title{
+    width: 245px;
+    height: 80px;
+    background-image: url('./img/titleBckg/Speech\ Icon.png');
+    background-repeat: no-repeat;
+    background-size: 26%;
+    margin-bottom: 50px;
+}
+/* ----------------------------------------------------------------------------------------------- */
