@@ -150,7 +150,7 @@ button{
 
 
 /* ------------------------------------------ mission section --------------------------------- */
-.mission, .training, .price, .community {
+.mission, .training, .price, .community, .faq {
     padding: 80px 20px;
    
 }
@@ -223,6 +223,110 @@ button{
     background-size: 26%;
     margin-bottom: 50px;
 }
+.price-wrap {
+    
+}
+.price__block {
+    padding: 40px 39px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.basic {
+    background-color: #E5E5E5;
+}
+.premium {
+    background-color: #131316;
+}
+.elite {
+    background-color: #E5E5E5;
+}
+.gray{}
+.black .price__amount{
+    color: #FFFFFF;
+}
+.black .price__amount--quality{
+    color: #131316;
+    background-color: #FFFFFF;
+}
+.black .price__info--text{
+    color: #FFFFFF;
+}
+.gray .price__amount--quality{
+    color: #FFFFFF;
+    background-color: #131316;
+}
+.price__amount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price__amount--quality{
+    display: inline-block;
+    padding: 4px 14px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+.price__amount--price{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+}
+.price__amount--price span{
+    font-size: 20px;
+    line-height: 30px;
+}
+.price__amoutn--period{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+.price__info {
+}
+.price__info--text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+.price__info--text span{
+    display: inline-block;
+    width: 20px;
+    height: 20px; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 10px;
+    }
+.gray .price__info--text span{   
+    background-image: url('./img/blackCheck.png');  
+}
+.black .price__info--text span{
+    background-image: url('./img/whiteCheck.png');
+}
+.price__info--btn {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #131316;
+    padding: 14px 40px;
+    border: 1px solid #131316;
+    border-radius: 1px;
+    display: inline-block;
+    margin-top: 32px;
+}
+.black .price__info--btn{
+    background-color: #FFFFFF;
+}
+
 /* ----------------------------------------------------------------------------------------------- */
 
 /* -------------------------------- community ---------------------------------------------------- */
@@ -234,4 +338,91 @@ button{
     background-size: 26%;
     margin-bottom: 50px;
 }
+/* ----------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------- FAQ ------------------------------------------------------- */
+.faq-container__title{
+    width: 192px;
+    height: 80px;
+    background-image: url('./img/titleBckg/FAQ.png');
+    background-repeat: no-repeat;
+    background-size: 44%;
+    margin-bottom: 50px;
+    background-position-x: 23%;
+}
+.faq-container__title .section-title{
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #131316;
+    text-align: right;
+}
+.faq-list {
+    padding: 50px 20px 0 20px;
+}
+.faq-list__item {
+    border: 1px solid rgba(19, 19, 22, 0.1);
+    border-radius: 2px;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #131316;
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-list__toggle {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url('./img/checkUp.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+}
+.faq-list__text {
+    display: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #595962;
+    margin-top: 16px;
+}
+/* ----------------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------- footer ------------------------------------------ */
+.footer {
+   background-color: #131316; 
+}
+.prefooter {
+    width: 100%;
+    height: 502px;
+}
+.prefooter__img {
+}
+.prefooter__text {
+}
+.bottom-footer {
+    padding: 51px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.footer-logo {
+    width: 85px;
+    height: 23px;
+    background-image: url('./img/Logo.png');
+    background-size: contain;
+}
+.footer-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #9797A2;
+}
+
 /* ----------------------------------------------------------------------------------------------- */
