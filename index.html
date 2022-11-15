@@ -5,12 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <link rel="stylesheet" type="text/css" href="./slick-master/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick-master/slick/slick.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header class="header">
-
+        <nav class="nav">
+                <div class="logo__container">
+                    <a href="#" class="logo"></a>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">Home</li>
+                    <li class="nav__item">About</li>
+                    <li class="nav__item">Workout</li>
+                    <li class="nav__item">Pricing</li>
+                    <li class="nav__item">Community</li>
+                    <li class="nav__item">FAQ</li>
+                </ul>
+                <div class="registration-container">
+                    <button class="registration__btn login">Log In</button>
+                    <button class="registration__btn signup">Sign Up</button>
+                </div>
+            </nav>
+            
         <div class="header__wrap">
             <p class="header__title">Get the best part of your day
                 <span>
@@ -22,7 +42,7 @@
         </div>
         
 
-        <nav class="nav"></nav>
+        
         <div class="mobile-logo__container">
                 <a href="#" class="mobile-logo"></a>
                 <a href="#" class="mobile-menu-btn"></a>
@@ -71,7 +91,13 @@
                 <span>.</span>
                 </h3>    
             </div>
-            <div class="slider-container"></div>
+            <div class="first-slider">
+                <img src="./img/firstSlider/1.png" alt="pic" class="first-slider__img">
+                <img src="./img/firstSlider/2.png" alt="pic" class="first-slider__img">
+                <img src="./img/firstSlider/3.png" alt="pic" class="first-slider__img">
+                <img src="./img/firstSlider/4.png" alt="pic" class="first-slider__img">
+                <img src="./img/firstSlider/5.png" alt="pic" class="first-slider__img">
+            </div>
         </section>
         <section class="price">
             <div class="price-container__title">
@@ -133,6 +159,13 @@
                 <span>.</span>
                 </h3>    
             </div>
+            <div class="second-slider">
+                <img src="./img/secondSlider/1.png" alt="pic" class="second-slider__img">
+                <img src="./img/secondSlider/2.png" alt="pic" class="second-slider__img">
+                <img src="./img/secondSlider/3.png" alt="pic" class="second-slider__img">
+                <img src="./img/secondSlider/1.png" alt="pic" class="second-slider__img">
+                <img src="./img/secondSlider/2.png" alt="pic" class="second-slider__img">
+            </div>
         </section>
         <sectioin class="faq">
             <div class="faq-container__title">
@@ -142,7 +175,9 @@
                 </h3>    
             </div>
             <ul class="faq-list">
-                <li class="faq-list__item">How can I book a workout?
+                <li class="faq-list__item">
+                    <span class="faq-list__title">How can I book a workout?</span>
+                    
                     <span class="faq-list__toggle"></span>
                     <div class="faq-list__text">Booking a workout classe is simple for our members.
                          Simply log into your Gymme account on our website and click "book class" button . 
@@ -151,31 +186,41 @@
 
                          You can cancel your class online by logging back in and click "cancel booking"</div>
                 </li>
-                <li class="faq-list__item">Can I pay by cash for my membership?
+                <li class="faq-list__item">
+                    <span class="faq-list__title">Can I pay by cash for my membership?</span>
+                    
                     <span class="faq-list__toggle"></span>
                     <div class="faq-list__text">Booking a workout classe is simple for our members. Simply log into your Gymme account on our website and click "book class" button . You can book 3 days in advance at 9pm.
 
 You can cancel your class online by logging back in and click "cancel booking"</div>
                 </li>
-                <li class="faq-list__item">What age do I need to be to join?
+                <li class="faq-list__item">
+                    <span class="faq-list__title">What age do I need to be to join?</span>
+                    
                     <span class="faq-list__toggle"></span>
                     <div class="faq-list__text">Booking a workout classe is simple for our members. Simply log into your Gymme account on our website and click "book class" button . You can book 3 days in advance at 9pm.
 
 You can cancel your class online by logging back in and click "cancel booking"</div>
                 </li>
-                <li class="faq-list__item">Are there any lockers?
+                <li class="faq-list__item">
+                    <span class="faq-list__title">Are there any lockers?</span>
+                    
                     <span class="faq-list__toggle"></span>
                     <div class="faq-list__text">Booking a workout classe is simple for our members. Simply log into your Gymme account on our website and click "book class" button . You can book 3 days in advance at 9pm.
 
 You can cancel your class online by logging back in and click "cancel booking"</div>
                 </li>
-                <li class="faq-list__item">How do I cancel my membership?
+                <li class="faq-list__item">
+                    <span class="faq-list__title">How do I cancel my membership?</span>
+                    
                     <span class="faq-list__toggle"></span>
                     <div class="faq-list__text">Booking a workout classe is simple for our members. Simply log into your Gymme account on our website and click "book class" button . You can book 3 days in advance at 9pm.
 
 You can cancel your class online by logging back in and click "cancel booking"</div>
                 </li>
-                <li class="faq-list__item">Is there water available at the gym?
+                <li class="faq-list__item">
+                    <span class="faq-list__title">Is there water available at the gym?</span>
+                    
                     <span class="faq-list__toggle"></span>
                     <div class="faq-list__text">Booking a workout classe is simple for our members. Simply log into your Gymme account on our website and click "book class" button . You can book 3 days in advance at 9pm.
 
@@ -184,11 +229,14 @@ You can cancel your class online by logging back in and click "cancel booking"</
             </ul>
         </sectioin>
     </main>
+
     <footer class="footer">
         <div class="prefooter">
-            <div class="prefooter__img"></div>
+            <div class="img-wrap">
+                <img src="./img/footer img.png" alt="pic" class="prefooter__img">
+            </div>
             <div class="prefooter__text">
-                <h2 class="prefooter__title">Wanna join & have fun?</h2>
+                <h2 class="prefooter__title">Wanna join <span>&</span> have fun?</h2>
                 <p class="prefooter__descr">We’ll keep you updated on the things you need to know about Gymme. Nothing more, nothing less.</p>
                 <button class="header__btn">join up</button>
             </div>
@@ -198,5 +246,12 @@ You can cancel your class online by logging back in and click "cancel booking"</
             <span class="footer-text">All rights reserved. Gymme 2021.</span>
         </div>
     </footer>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick-master/slick/slick.min.js"></script>
+    <script src="./slick-master/slick/slick.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
