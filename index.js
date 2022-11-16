@@ -62,3 +62,26 @@ jQuery(function($){
       });
 });
       
+
+const openArticles = document.querySelectorAll('.faq-list__toggle');
+const faqArticles = document.querySelectorAll('.faq-list__text');
+const burgerBtn = document.querySelector('.mobile-menu-btn');
+const burgerMenu = document.querySelector('.mobile-menu');
+
+openArticles.forEach((el, index) => {
+  el.addEventListener('click', (event) => {
+    event.currentTarget.classList.toggle('open-btn')
+    console.log("------> Articles: ", event.currentTarget);
+    console.log("index ---> :", index);
+
+    faqArticles.forEach((el, ind) => {
+      if(ind === index) el.classList.toggle('open-text')
+    });
+  });
+});
+
+burgerBtn.addEventListener('click', () => {
+  burgerBtn.classList.toggle('open-burger-btn');
+  burgerMenu.classList.toggle('open-burger-menu');
+})
+

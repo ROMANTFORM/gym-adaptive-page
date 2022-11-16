@@ -75,12 +75,9 @@ main{
     background-color: #131316;
     padding: 170px 0 129px 0;
     width: 100%;
+    height: 100%;
     transform: translateX(-100%);
     transition: transform 300ms linear;
-}
-.active-menu{
-    transform: translateX(0%);
-    transition: transform 300ms linear;  
 }
 .mobile-logo__container {
     position: absolute;
@@ -108,9 +105,6 @@ main{
     height: 21px;
     background-image: url('./img/Menu\ Button.png');
     background-size: contain;
-}
-.open-burger{
-    background-image: url('./img/Menu\ ButtonClose.png');
 }
 .mobile-nav {
     display: flex;
@@ -150,6 +144,14 @@ main{
 .sign-up {
     background-color: #4AE290;
 }
+
+.open-burger-btn{
+    background-image: url('./img/Menu\ ButtonClose.png');
+}
+.open-burger-menu{
+    transform: translateX(0%);
+    transition: transform 300ms linear; 
+}
 /* -------------------------------------------------------------------------------------------- */
 
 
@@ -159,12 +161,14 @@ main{
    
 }
 .mission-container__title{
-    width: 251px;
-    height: 80px;
+    /* width: 251px; */
+    /* height: 80px; */
+    padding: 40px 0;
     background-image: url('./img/titleBckg/Vector.png');
     background-repeat: no-repeat;
     background-size: 32%;
     margin-bottom: 32px;
+    text-align: left;
 }
 .section-title {
     font-weight: 800;
@@ -213,23 +217,27 @@ main{
 }
 .training-container__title{
     margin-left: 20px;
-    width: 351px;
-    height: 80px;
+    padding: 40px 0;
+    /* width: 351px; */
+    /* height: 80px; */
     background-image: url('./img/titleBckg/clarity_calendar-solid.png');
     background-repeat: no-repeat;
     background-size: 26%;
     margin-bottom: 32px;
+    text-align: left;
 }
 /* ----------------------------------------------------------------------------------------------- */
 
 /* ----------------------------- pricing --------------------------------------------------------- */
 .price-container__title{
-    width: 251px;
-    height: 80px;
+    /* width: 251px; */
+    /* height: 80px; */
+    padding: 40px 0;
     background-image: url('./img/titleBckg/Vector\ \(1\).png');
     background-repeat: no-repeat;
     background-size: 26%;
     margin-bottom: 50px;
+    text-align: left;
 }
 .price__block {
     padding: 40px 39px;
@@ -338,13 +346,15 @@ main{
     padding: 80px 0;
 }
 .community-container__title{
-    padding: 0 80px;
-    width: 245px;
-    height: 80px;
+    padding: 40px 0;
+    /* width: 245px; */
+    /* height: 80px; */
     background-image: url('./img/titleBckg/Speech\ Icon.png');
     background-repeat: no-repeat;
     background-size: 26%;
+    background-position-x: 20px;
     margin-bottom: 50px;
+    text-align: left;
 }
 /* ----------------------------------------------------------------------------------------------- */
 
@@ -363,7 +373,7 @@ main{
     font-size: 50px;
     line-height: 50px;
     color: #131316;
-    text-align: right;
+    text-align: center;
 }
 .faq-list {
     padding: 50px 20px 0 20px;
@@ -393,6 +403,7 @@ main{
     background-repeat: no-repeat;
     background-size: contain;
     transform: rotate(180deg);
+    transition: all 300ms liner;
 }
 .faq-list__text {
     display: none;
@@ -401,6 +412,13 @@ main{
     line-height: 26px;
     color: #595962;
     margin-top: 16px;
+}
+.open-btn{
+    transform: rotate(0);
+    transition: all 300ms liner;
+}
+.open-text{
+    display: block;
 }
 /* ----------------------------------------------------------------------------------------------- */
 
